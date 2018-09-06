@@ -126,7 +126,7 @@ class LocalBaseBlock
  * @property {ArrayBuffer} valueHex
  */
 //noinspection JSUnusedLocalSymbols
-const LocalHexBlock = BaseClass => class LocalHexBlockMixin extends BaseClass
+const LocalHexBlock = function(BaseClass) { return class LocalHexBlockMixin extends BaseClass
 {
 	//**********************************************************************************
 	//noinspection JSUnusedGlobalSymbols
@@ -240,7 +240,7 @@ const LocalHexBlock = BaseClass => class LocalHexBlockMixin extends BaseClass
 		return object;
 	}
 	//**********************************************************************************
-};
+}; };
 //**************************************************************************************
 //endregion
 //**************************************************************************************
